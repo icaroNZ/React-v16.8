@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ResourceListClass from './ResourceListClass';
+import UserListClass from './UserListClass';
 class AppClass extends Component {
   state = { resource: 'posts' };
   render() {
@@ -13,6 +14,7 @@ class AppClass extends Component {
             Todos
           </button>
         </div>
+        <UserListClass />
         <ResourceListClass resource={this.state.resource} />
       </div>
     );
